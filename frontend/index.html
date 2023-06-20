@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OpenAI API Functions Demo</title>
+  <script src="./script.js"></script>
+  <style>
+    .color-box {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      border-radius: 5px;
+      background-color: brown;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    .input-container {
+      display: flex;
+      align-items: center;
+    }
+    
+    .input-container input {
+      width: 400px;
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    
+    .output-label {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>OpenAI API Functions Demo</h1>
+  
+  <div class="container">
+    <div class="input-container">
+      <input type="text" id="input-prompt" placeholder="Enter a prompt">
+      <button id="submit-button" onclick="submit()">Send prompt</button>
+    </div>
+    
+    <div id="box-container">
+      <div class="color-box" id="box1">
+        <h1>box1</h1>
+      </div>
+      <div class="color-box" id="box2">
+        <h1>box2</h1>
+      </div>
+      <div class="color-box" id="box3">
+        <h1>box3</h1>
+      </div>
+    </div>
+  
+    <div class="output-label">
+      <label for="output-textbox">Output:</label>
+      <input type="text" id="output-textbox" readonly>
+    </div>
+  </div>
+</body>
+</html>
